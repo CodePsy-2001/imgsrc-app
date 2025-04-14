@@ -41,6 +41,7 @@ export const fontFamilySchema = z
     "source-code-pro",
     "ibm-plex-mono",
     "jetbrains-mono",
+    "pretendard",
   ])
   .default(DEFAULT_FONT_FAMILY)
 export type FontFamily = z.infer<typeof fontFamilySchema>
@@ -175,6 +176,12 @@ export const supportedFonts: {
     value: "jetbrains-mono",
     label: "JetBrains Mono",
     weights: [100, 200, 300, 400, 500, 600, 700, 800],
+    subset: "latin",
+  },
+  {
+    value: "pretendard",
+    label: "Pretendard",
+    weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     subset: "latin",
   },
 ] as const
